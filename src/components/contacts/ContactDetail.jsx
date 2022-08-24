@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import styled from 'styled-components'
-import Modal from '../UI/modal/Modal'
+import Modal from '../../UI/modal/Modal'
 import contactPhoto from '../../assets/image/photContact.png'
-import Flex from '../UI/ui-for-positions/Flex'
+import Flex from '../../UI/ui-positions/Flex'
 import EditContact from './EditContact'
 
 const ContactDetail = ({ isVisible, onClose }) => {

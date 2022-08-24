@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import Modal from '../UI/modal/Modal'
-import Flex from '../UI/ui-for-positions/Flex'
+import Modal from '../../UI/modal/Modal'
+import Flex from '../../UI/ui-positions/Flex'
 
 const DeleteModal = ({ isVisible, onClose, onClick }) => {
    return (

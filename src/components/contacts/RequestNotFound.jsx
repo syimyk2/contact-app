@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 import { useSelector } from 'react-redux'
-import Flex from '../UI/ui-for-positions/Flex'
-
-import NotFound from '../UI/not-found-content/NotFound'
+import Flex from '../../UI/ui-positions/Flex'
+import NotFound from '../../UI/not-found-content/NotFound'
 
 const RequestNotFound = () => {
    const { searchValue } = useSelector((state) => state.contact)
