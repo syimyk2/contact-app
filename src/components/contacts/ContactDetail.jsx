@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 import styled from 'styled-components'
 import Modal from '../../UI/modal/Modal'
-import contactPhoto from '../../assets/image/photContact.png'
+import contactPhoto from '../../assets/image/ico.png'
 import Flex from '../../UI/ui-positions/Flex'
 import EditContact from './EditContact'
 
@@ -51,7 +51,7 @@ const ContactDetailStyled = styled.div`
    background-color: transparent;
 `
 const ContactPhotoStyled = styled.div`
-   background-color: gray;
+   background-color: white;
    background-image: url(${contactPhoto});
    background-position: center;
    background-size: contain;
@@ -60,7 +60,7 @@ const ContactPhotoStyled = styled.div`
    height: 200px;
 `
 const Name = styled.h3`
-   color: whitesmoke;
+   color: blue;
    font-weight: 200;
 `
 const Wrapper = styled.div`
@@ -72,7 +72,7 @@ const Wrapper = styled.div`
    gap: 5px;
 `
 const Label = styled.label`
-   color: #8774e1;
+   color: #2980b9;
 `
 const Disabled = styled.h3`
    color: #f5f5f56b;

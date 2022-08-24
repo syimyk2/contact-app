@@ -48,7 +48,7 @@ const EditContact = ({ hideEditOption }) => {
    }
 
    return (
-      <>
+      <OuterWrapper>
          <Wrapper>
             <Label>First name</Label>
             <InputEdit
@@ -58,7 +58,7 @@ const EditContact = ({ hideEditOption }) => {
             />
          </Wrapper>
          <Wrapper>
-            <Label>First name</Label>
+            <Label>Last name</Label>
             <InputEdit
                name="lastName"
                onChange={inpuChangeHandler}
@@ -76,46 +76,53 @@ const EditContact = ({ hideEditOption }) => {
          <Flex width="100%">
             <Button onClick={editContactHandler}>Save</Button>
          </Flex>
-      </>
+      </OuterWrapper>
    )
 }
+
+const OuterWrapper = styled.div`
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+`
+
 const Wrapper = styled.div`
    width: 100%;
    padding: 0.5rem;
-   border-bottom: 0.1px solid #313131;
+   // border-bottom: 0.1px solid #313131;
    display: flex;
    flex-direction: column;
    gap: 5px;
 `
 const Label = styled.label`
-   color: #8774e1;
+   color: #2980b9;
 `
 const InputEdit = styled.input`
    outline: none;
    border: none;
    background-color: transparent;
-   color: white;
+   color: blue;
    font-size: 17px;
    border-radius: 4px;
    transition: all 0.5s;
-   width: 100%;
    letter-spacing: 1px;
    padding: 0.4rem;
-   border: 1px solid #8774e1;
+   border: 1px solid #2980b9;
    ::placeholder {
-      color: #8a8a8a;
+      color: blue;
    }
 `
 const Button = styled.button`
    width: 100%;
    border: none;
-   background-color: transparent;
+   background-color: #2980b9;
    padding: 0.5em;
+   margin: 10px 0 10px 0;
    font-size: 15px;
    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
    transition: all 0.2s;
    text-transform: uppercase;
-   color: #8774e1;
+   color: white;
    border-radius: 2px;
    :hover {
       background-color: #8674e12f;

@@ -18,18 +18,18 @@ const DeleteModal = ({ isVisible, onClose, onClick }) => {
 }
 
 const Message = styled.h3`
-   color: #8774e1;
+   color: #2980b9;
    margin: 0 auto;
 `
 const Button = styled.button`
    border: none;
-   background-color: transparent;
+   background-color: #2980b9
    padding: 0.5em;
    font-size: 15px;
    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
    transition: all 0.2s;
    text-transform: uppercase;
-   color: tomato;
+   color: crimson;
    border-radius: 8px;
    :hover {
       background-color: #ff634736;
@@ -43,7 +43,7 @@ const CancelButton = styled.button`
    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
    transition: all 0.2s;
    text-transform: uppercase;
-   color: #8774e1;
+   color: #2980b9;
    border-radius: 8px;
    :hover {
       background-color: #8674e12f;

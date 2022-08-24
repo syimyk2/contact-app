@@ -20,14 +20,13 @@ const Contact = ({ contact, address, onClick, id }) => {
       setShowDeleteModal(true)
    }
    const hideModalHandler = (e) => {
-      console.log(e)
       e.stopPropagation()
       setShowDeleteModal(false)
    }
    return (
       <ContactStyled onClick={onClick}>
          <ContactTitle>
-            <IoMdContact color="#8774e1" fontSize={30} /> &nbsp;&nbsp;
+            <IoMdContact fontSize={30} /> &nbsp;&nbsp;
             <Flex capitalize direction="column" gap="3px">
                {contact}
                <Span>{address}</Span>
@@ -43,11 +42,11 @@ const Contact = ({ contact, address, onClick, id }) => {
    )
 }
 const Span = styled.span`
-   color: gray;
+   color: white;
    font-size: 14px;
 `
 const DeleteIcon = styled(MdDelete)`
-   color: #413e3e;
+   color: #d66d75;
    font-size: 30px;
    z-index: 10;
    :hover {
@@ -58,9 +57,9 @@ const DeleteIcon = styled(MdDelete)`
    }
 `
 const ContactStyled = styled.div`
-   width: 100%;
+   // width: 100%;
    padding: 1rem;
-   background-color: #2c2c2c;
+   background: #1c92d2;
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -69,10 +68,10 @@ const ContactStyled = styled.div`
    cursor: pointer;
    transition: all 0.2s;
    :hover {
-      background-color: #151515;
+      background-color: #6dd5fa;
    }
    :active {
-      background-color: black;
+      background-color: #6dd5fa;
    }
 `
 const ContactTitle = styled.h3`

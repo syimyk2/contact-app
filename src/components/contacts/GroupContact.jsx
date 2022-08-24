@@ -19,7 +19,7 @@ const GroupContact = ({ letter, contactsGroup, showDetailContact }) => {
    )
 }
 const Group = styled.h4`
-   color: #8774e1;
+   color: #2980b9;
    margin: 15px 0px 5px 10px;
    font-weight: 200;
 `

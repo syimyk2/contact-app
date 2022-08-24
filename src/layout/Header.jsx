@@ -18,7 +18,7 @@ const HeaderStyled = styled.header`
    width: 100%;
    padding: 1rem 2rem;
    height: 70px;
-   background-color: #212121;
+   background: #1c92d2;
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -29,15 +29,16 @@ const TitleApp = styled.h3`
    align-items: center;
    gap: 10px;
    min-width: fit-content;
-   color: #8774e1;
+   color: white;
    margin-right: 50px;
    ::before {
       content: 'Contact app';
-      color: #8774e1;
+      color: white;
       font-weight: 300;
       text-transform: uppercase;
       letter-spacing: 0.7px;
       @media (max-width: 700px) {
+         max-width: 290px;
          font-size: 13px;
          z-index: ${({ isFocus }) => (isFocus ? '-10' : '')};
          position: ${({ isFocus }) => (isFocus ? 'absolute' : 'static')};

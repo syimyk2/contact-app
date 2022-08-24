@@ -56,14 +56,18 @@ const Contacts = () => {
    )
 }
 const WrapperContacts = styled.div`
-   margin: auto;
+   margin: 0 auto;
    width: 100%;
    max-width: 1000px;
-   background: #212121;
+   background: rgba(154, 173, 190, 0.2);
    padding: 0.6rem;
    box-shadow: 3px 5px 10px black;
    margin-top: 7px;
    border-radius: 5px;
+   @media (max-width: 700px) {
+      box-shadow: none;
+      width: 100%;
+   }
 `
 
 export default Contacts

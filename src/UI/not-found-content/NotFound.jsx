@@ -3,7 +3,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { MdOutlineSearchOff } from 'react-icons/md'
-import Flex from '../ui-for-positions/Flex'
+import Flex from '../ui-positions/Flex'
 
 const NotFound = () => {
    return (

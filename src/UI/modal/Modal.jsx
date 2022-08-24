@@ -36,7 +36,7 @@ const ModalStyle = styled.div`
    transform: translate(-50%, -50%);
    border-radius: 2px;
    z-index: 11;
-   background: #212121;
+   background: #ffffff;
    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
    animation: MODAL linear 0.4s;
    @keyframes MODAL {
