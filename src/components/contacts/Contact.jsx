@@ -4,7 +4,7 @@ import { IoMdContact } from 'react-icons/io'
 import { MdDelete } from 'react-icons/md'
 import { useDispatch } from 'react-redux'
 import Flex from '../../UI/ui-positions/Flex'
-import { contactsActions } from '../../store/contacts-slice'
+import { contactsActions } from '../../store/contactSlice'
 import DeleteModal from './DeleteModal'
 
 const Contact = ({ contact, address, onClick, id }) => {

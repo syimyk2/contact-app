@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { useSelector, useDispatch } from 'react-redux'
-import { getContacts, contactsActions } from '../../store/contacts-slice'
+import { getContacts, contactsActions } from '../../store/contactSlice'
 import ContactDetail from './ContactDetail'
 import RequestNotFound from './RequestNotFound'
 import GroupContact from './GroupContact'
