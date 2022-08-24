@@ -46,7 +46,7 @@ const IconSearch = styled(BiSearch)`
    top: 55%;
    transform: translateY(-50%);
    font-size: 22px;
-   color: #8a8a8a;
+   color: white;
    cursor: pointer;
    z-index: 1;
 `
@@ -56,15 +56,15 @@ const IconClose = styled(IoMdClose)`
    top: 55%;
    transform: translateY(-50%);
    font-size: 22px;
-   color: #8a8a8a;
+   color: white;
    cursor: pointer;
    z-index: 1;
 `
 const SearchInputStyled = styled.input`
    outline: none;
    border: none;
-   background-color: #2c2c2c;
-   padding: ${({ isFocus }) => (isFocus ? '0.6rem 0 0.6rem 2.5rem' : '0')};
+   background-color: #6dd5fa;
+   padding: ${({ isFocus }) => (isFocus ? '0.6rem 0.5rem 0.5rem 2.5rem' : '0')};
    color: white;
    font-size: 17px;
    border-radius: 10px;
@@ -73,7 +73,7 @@ const SearchInputStyled = styled.input`
    letter-spacing: 1px;
    opacity: ${({ isFocus }) => (isFocus ? '1' : '0')};
    ::placeholder {
-      color: #8a8a8a;
+      color: #2980b9;
    }
 `
 const WrapperInput = styled.div`

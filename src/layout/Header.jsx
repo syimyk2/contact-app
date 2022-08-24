@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { IoMdContact } from 'react-icons/io'
-// import SearchInput from '../components/search-bar/SearchInput'
+import SearchInput from '../components/search/SearchInput'
 
 const Header = () => {
    const [isFocus, setIsFocus] = useState(false)
@@ -10,13 +10,13 @@ const Header = () => {
          <TitleApp isFocus={isFocus} setIsFocus={setIsFocus}>
             <IoMdContact fontSize={30} />
          </TitleApp>
-         {/* <SearchInput isFocus={isFocus} setIsFocus={setIsFocus} /> */}
+         <SearchInput isFocus={isFocus} setIsFocus={setIsFocus} />
       </HeaderStyled>
    )
 }
 const HeaderStyled = styled.header`
    width: 100%;
-   padding: 1rem 2rem;
+   padding: 1rem 5rem;
    height: 70px;
    background: #1c92d2;
    display: flex;
