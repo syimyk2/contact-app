@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { BiSearch } from 'react-icons/bi'
 import { IoMdClose } from 'react-icons/io'
 import { useDispatch } from 'react-redux'
-import { contactsActions } from '../../store/contacts-slice'
+import { contactsActions } from '../../store/contactSlice'
 import useDebounce from '../../hooks/useDebounce'
 
 let blockedEffect = true
